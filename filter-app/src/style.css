@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(40, 44, 47);
+    font-family: 'Gagalin', sans-serif;
+}
+
+.card{
+    cursor: pointer;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(127, 127, 127);
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 45px;
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #9a9a9a;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    animation: glow 2s infinite;
+    word-spacing: 5px;
+    line-height: 1.5;
+    font-style: italic;
+    background-image: linear-gradient(to bottom, #fff, #ccc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #28a745;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1e7e22;
+}

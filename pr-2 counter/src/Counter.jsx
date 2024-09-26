@@ -23,9 +23,9 @@ function Counter() {
       <button onClick={decrement} disabled={count === 0}>
         -
       </button>
-      <button onClick={increment}>+</button>
-      <button onClick={reset}>R</button>
       <span>{count}</span>
+      <button onClick={increment}>+</button>
+      <button id="alignments" onClick={reset}>R</button>
     </div>
   );
 }
