@@ -4,13 +4,13 @@ import { category } from './Data'
 
 import './style.css'
 
-function Product({ product,filterProduct }) {
+function Product({ product, filterProduct }) {
 
 
 
     return (
         <div className='mt-5'>
-             <button onClick={ () => filterProduct("all") } className='btn btn-secondary'>All</button>
+            <button onClick={() => filterProduct("all")} className='btn btn-secondary'>All</button>
             {
                 category.map((cat) => {
                     return (
@@ -19,7 +19,7 @@ function Product({ product,filterProduct }) {
                 })
             }
 
-           
+
 
             <div className="container">
                 <div className="row mt-5">
@@ -28,10 +28,10 @@ function Product({ product,filterProduct }) {
                             return (
                                 <div key={p.id} className="col-lg-4 mb-4">
                                     <div className="card">
-                                        <img src={p.img} style={{height:"200px",objectFit:"contain"}} className="card-img-top" alt="..." />
+                                        <img src={p.img} style={{ height: "200px", objectFit: "contain" }} className="card-img-top" alt="..." />
                                         <div className="card-body">
                                             <h5 className="card-title">{p.name}</h5>
-                                            <p  className="card-text fs-5 fw-bold">RS :- {p.price}</p>
+                                            <p className="card-text fs-5 fw-bold">RS :- {p.price}</p>
                                             <a href="#" className="btn btn-success">Buy Now</a>
                                         </div>
                                     </div>
