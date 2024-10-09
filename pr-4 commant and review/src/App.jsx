@@ -1,11 +1,11 @@
-import { useState, useEffect, useRef } from "react"
-import './DynamicForm.css'
+import { useState, useEffect, useRef } from "react";
+import './DynamicForm.css';
 
 function App() {
 
   const [tableInput, SetInput] = useState([
     { id: "", name: "", email: "", salary: "" }
-  ])
+  ]);
 
   const inputRefs = useRef([]);
 
@@ -21,27 +21,25 @@ function App() {
   }, [tableInput]);
 
   const add = () => {
-    let newfield = { id: Math.floor(Math.random() * 1000), name: "", email: "", salary: "" }
+    let newfield = { id: Math.floor(Math.random() * 1000), name: "", email: "", salary: "" };
     SetInput([...tableInput, newfield]);
   }
+
   const remove = (id) => {
     let updatedata = tableInput.filter((item) => item.id !== id); 
     SetInput(updatedata);
   }
 
-  const InputChange = (id, field, value, index) => {
+  const InputChange = (id, field, value) => {
     const updatedtableInput = tableInput.map((item) =>
       item.id === id ? { ...item, [field]: value } : item
     );
     SetInput(updatedtableInput);
-    // Focus on the next field when typing
-    if (index < inputRefs.current.length - 1) {
-      inputRefs.current[index + 1].focus();
-    }
   };
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
+      e.preventDefault(); // Prevent form submission or unintended behavior
       add();
     }
   };
@@ -55,7 +53,7 @@ function App() {
             <th>Full Name</th>
             <th>Email Address</th>
             <th>Salary</th>
-            <th><button className="btn1" onClick={() => add()}> + </button></th>
+            <th><button className="btn1" onClick={add}> + </button></th>
           </tr>
         </thead>
         <tbody>
@@ -63,13 +61,32 @@ function App() {
             tableInput.map((val, index) => (
               <tr key={val.id} align="center">
                 <td>
-                  <input type="text" value={val.name} onChange={(e) => InputChange(val.id, 'name', e.target.value, index)} placeholder="Enter Your Name" ref={el => inputRefs.current[index] = el} onKeyPress={handleKeyPress} />
+                  <input
+                    type="text"
+                    value={val.name}
+                    onChange={(e) => InputChange(val.id, 'name', e.target.value)}
+                    placeholder="Enter Your Name"
+                    ref={el => inputRefs.current[index] = el}
+                    onKeyPress={handleKeyPress}
+                  />
                 </td>
                 <td>
-                  <input type="text" value={val.email} onChange={(e) => InputChange(val.id, 'email', e.target.value, index)} placeholder="Enter Your Email Id" onKeyPress={handleKeyPress} />
+                  <input
+                    type="text"
+                    value={val.email}
+                    onChange={(e) => InputChange(val.id, 'email', e.target.value)}
+                    placeholder="Enter Your Email Id"
+                    onKeyPress={handleKeyPress}
+                  />
                 </td>
                 <td>
-                  <input type="text" value={val.salary} onChange={(e) => InputChange(val.id, 'salary', e.target.value, index)} placeholder="Enter Your Salary " onKeyPress={handleKeyPress} />
+                  <input
+                    type="text"
+                    value={val.salary}
+                    onChange={(e) => InputChange(val.id, 'salary', e.target.value)}
+                    placeholder="Enter Your Salary"
+                    onKeyPress={handleKeyPress}
+                  />
                 </td>
                 <td>
                   <button className="btn2" onClick={() => remove(val.id)}>X</button>
@@ -82,7 +99,7 @@ function App() {
       </table>
 
     </div>
-  )
+  );
 }
 
 export default App;
