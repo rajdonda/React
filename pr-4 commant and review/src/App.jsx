@@ -26,7 +26,7 @@ function App() {
   }
 
   const remove = (id) => {
-    let updatedata = tableInput.filter((item) => item.id !== id); 
+    let updatedata = tableInput.filter((item) => item.id !== id);
     SetInput(updatedata);
   }
 
@@ -39,7 +39,7 @@ function App() {
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
-      e.preventDefault(); // Prevent form submission or unintended behavior
+      e.preventDefault();
       add();
     }
   };
