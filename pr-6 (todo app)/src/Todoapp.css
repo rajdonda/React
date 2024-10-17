@@ -1,0 +1,169 @@
+/* app.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; /* Light background */
+    color: #333; /* Dark text */
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+}
+
+body:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+    color: #111; /* Darker text on hover */
+}
+
+.todo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff; /* Light container */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Transition effect */
+}
+
+.todo-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333; /* Dark heading */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+h1:hover {
+    color: #007bff; /* Blue text on hover */
+}
+
+.task-input {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light input background */
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Light border */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition effect */
+}
+
+.task-input:hover {
+    background-color: #f0f0f0; /* Slightly darker input background on hover */
+    border-color: #ccc; /* Darker border on hover */
+}
+
+.task-input input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #ccc; /* Light input border */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff; /* White input background */
+    color: #333; /* Dark text */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Transition effect */
+}
+
+.task-input input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    background-color: #e6f7ff; /* Light blue background on focus */
+}
+
+.task-input button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effect */
+}
+
+.task-input button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.task {
+    background-color: #f9f9f9; /* Task background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light border */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition effect */
+}
+
+.task:hover {
+    background-color: #f0f0f0; /* Slightly darker task background on hover */
+    border-color: #ccc; /* Darker border on hover */
+}
+
+.task h3 {
+    margin: 0;
+    font-size: 1.75rem;
+    color: #333; /* Dark text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Text shadow */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.task h3:hover {
+    color: #007bff; /* Blue text on hover */
+}
+
+.task p {
+    margin: 10px 0;
+    color: #666; /* Lighter text */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.task p:hover {
+    color: #333; /* Darker text on hover */
+}
+
+.task button {
+    margin-right: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effect */
+}
+
+.task button:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-buttons button {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Transition effect */
+}
+
+.edit-buttons button:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.edit-buttons .save {
+    background-color: #28a745; /* Green for save */
+    color: white;
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.edit-buttons .save:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.edit-buttons .cancel {
+    background-color: #dc3545; /* Red for cancel */
+    color: white;
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.edit-buttons .cancel:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
