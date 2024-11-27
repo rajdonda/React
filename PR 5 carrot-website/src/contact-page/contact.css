@@ -1,0 +1,65 @@
+.contact-page {
+  background-color: #ffffff; /* White background for a cleaner look */
+  padding: 40px; /* Increased padding for better spacing */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+.contact-page h1 {
+  color: #007bff; /* Bootstrap primary color */
+  margin-bottom: 30px; /* Increased margin for better separation */
+  font-size: 2.5rem; /* Larger font size for prominence */
+  text-align: center; /* Centered heading */
+}
+
+.contact-page p {
+  color: #6c757d; /* Bootstrap secondary color */
+  margin-bottom: 40px; /* Increased margin for better separation */
+  text-align: center; /* Centered paragraph */
+}
+
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Limit form width for better layout */
+  margin: 0 auto; /* Center the form */
+}
+
+.contact-page label {
+  margin-bottom: 10px; /* Reduced margin for compactness */
+  font-weight: bold;
+  font-size: 1.1rem; /* Slightly larger font for labels */
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="tel"],
+.contact-page textarea {
+  padding: 15px; /* Increased padding for comfort */
+  border: 1px solid #ced4da; /* Bootstrap border color */
+  border-radius: 5px;
+  transition: border-color 0.3s;
+  font-size: 1rem; /* Consistent font size */
+}
+
+.contact-page input[type="text"]:focus,
+.contact-page input[type="tel"]:focus,
+.contact-page textarea:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+}
+
+.contact-page button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Adjusted padding for button */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.1rem; /* Larger font size for button */
+}
+
+.contact-page button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
