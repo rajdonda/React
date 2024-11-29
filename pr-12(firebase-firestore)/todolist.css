@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e7ff;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #3b82f6;
+  margin-bottom: 30px;
+}
+
+/* Container */
+div {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Input Field */
+input[type="text"] {
+  width: calc(100% - 60px);
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0px 0px 8px rgba(59, 130, 246, 0.5);
+}
+
+/* Buttons */
+button {
+  margin: 8px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Colors */
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:nth-child(1) {
+  background-color: #3b82f6;
+  color: white;
+}
+
+button:nth-child(1):hover {
+  background-color: #2563eb;
+}
+
+button:nth-child(2) {
+  background-color: #fca5a1;
+  color: white;
+  width: 100px;
+  padding: 30px; 
+}
+
+button:nth-child(2):hover {
+  background-color: #ef4444;
+}
+
+button:nth-child(3) {
+  background-color: #fdba74;
+  color: white;
+}
+
+button:nth-child(3):hover {
+  background-color: #f97316;
+}
+
+button:last-child {
+  background-color: #4ade80;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #22c55e;
+}
+
+/* Todo List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+  background-color: #f3f4f6;
+}
+
+/* Footer Buttons Alignment */
+button:last-child {
+  width: calc(100% - 30px);
+  margin: 25px auto 0;
+}
