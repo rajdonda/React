@@ -11,8 +11,9 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<LogPage setIsLoggedIn={setIsLoggedIn} />} /> {/* Setting the login page as the default route */}
-        <Route path="/login" element={<LogPage setIsLoggedIn={setIsLoggedIn} />} /> {/* Adding the login page route */}
+        {/* Commenting out the login page for now */}
+        {/* <Route path="/" element={<LogPage setIsLoggedIn={setIsLoggedIn} />} /> */}
+        {/* <Route path="/login" element={<LogPage setIsLoggedIn={setIsLoggedIn} />} /> */}
         <Route path="/signup" element={<SignUpPage />} /> {/* Adding the signup page route */}
       </Routes>
     </Router>
